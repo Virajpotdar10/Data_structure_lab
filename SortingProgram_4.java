@@ -30,7 +30,7 @@ public class SortingProgram_4 {
                         if (arr[j] > arr[j + 1]) {
                             int t = arr[j];
                             arr[j] = arr[j + 1];
-                            arr[j + 1] = t;
+                            arr[j + 1] = t;  
                         }
                     }
                 }
@@ -41,6 +41,7 @@ public class SortingProgram_4 {
                 }
                 break;
             case 2:
+
                 for (int i = 0; i < size - 1; i++) {
                     int minIndex = i;
                     for (int j = i + 1; j < size; j++) {
@@ -66,3 +67,59 @@ public class SortingProgram_4 {
         s.close();
     }
 }
+
+
+
+// import java.util.Scanner;
+// class SortingProgram_4 {
+//         public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter No of array:");
+//         int size = sc.nextInt();
+//         int arr[] = new int[size];
+
+//         System.out.print("Enter value:");
+//         for (int i = 0; i < size; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         System.out.println("Values are:");
+//         for (int i = 0; i < size; i++) {
+//             System.out.println(arr[i] + " ");
+//         }
+//         System.out.println("Performing Bubble Sort Now");
+
+//         for (int i = 0; i < size - 1; i++) {
+//             for (int j = 0; j < size - i - 1; j++) {
+//                 if (arr[j] > arr[j + 1]) {
+//                     int temp = arr[j];
+//                     arr[j] = arr[j + 1];
+//                     arr[j + 1] = temp;
+//                 }
+//             }
+//         }
+//         for (int i = 0; i < size; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//         System.out.println("Performing Selection Sort Now");
+
+//         for (int i = 0; i < size - 1; i++) {
+//             int MinIndex = i;
+//             for (int j = i + 1; j < size; j++) {
+//                 if (arr[j] < arr[MinIndex]) {
+//                     MinIndex = j;
+//                 }
+
+//             }
+//                 int temp = arr[i];
+//                 arr[i] = arr[MinIndex];
+//                 arr[MinIndex] = temp;
+//             }
+//             for (int i = 0; i < size; i++) {
+//                 System.out.print(arr[i] + " ");
+//             }
+
+//         sc.close();
+//     }
+
+// }
